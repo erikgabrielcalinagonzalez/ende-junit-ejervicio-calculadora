@@ -16,6 +16,7 @@ Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguie
 
 3. Realiza un estudio de caja negra de la división e implementa las pruebas en junit: Se realizará en markdown.
     - Pruebas realizadas en junit:
+    
         Prueba  |   Resultado esperado  |   Resultado obtenido  |   Tipo de respuesta   |
         10/5    |           2           |           2           |       Correcta        |
         -4/2    |          -2           |          -2           |       Correcta        |
