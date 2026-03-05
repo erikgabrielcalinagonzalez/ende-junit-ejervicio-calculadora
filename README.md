@@ -27,31 +27,41 @@ Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguie
 
     1. Clases de equivalencia
         - Entradas
-            - Dividendo a
-            - Divisor b
+            - Tipo: (int)
+            - Entrada a
+            - Entrada b
 
-        - valores validos 
-            - cualquier división positiva o negativa
-            - 0 entre cualquier valor
+        - valores validos de a:
+            - desde +inf hasta -inf
         
-        - valores no validos 
-            - cualquier división entre 0 (se dara la excepción)
+        - valores vvalidos de b:
+            - de +inf a 0, de 0 hasta -inf
 
-    1. Análisis de valores límites
-        - 0
-        - 1
-        - -1
-        - mismo numero 7/7
-        - divisor de 0
+        - valores no validos de a:
+            - no tiene.
 
-|Clase equivalencia |  Prefijo  |  Límite   |  Código   |   Valores   |
+        - valores no validos de b: 
+            - inf entre 0 (realizar Excepcion)
+
+    2. Análisis de valores límites
+        - limites de a:
+        - -inf
+        - +inf
+
+|Clase equivalencia |  Prefijo  |  Límite |  Código   |   Valores   |
 |---|---|---|---|---|
-|   Valor Válido    |   CEev    |   X/X    |   CEev1   |    7/7     |
-|                   |           |   X/-Y   |   CEev2   |    5/-7    |
-|                   |           |   -X/Y   |   CEev3   |    -8/4    |
-|                   |           |  -X/-Y   |   CEev2   |    -9/-24  |
-|                   |           |   0/X    |   CEev2   |    0/20    |
-|   Valor No válido |   CEei    |   X/0    |   CEei1   |    10/0    |
+|   Valor Válido    |   CEev    |   inf    |   CEev1   |    7     |
+
+        - limites de b:
+        - 0, -inf
+        - +inf, 0
+        - 0
+
+|Clase equivalencia |  Prefijo  |  Límite |  Código   |   Valores   |
+|---|---|---|---|---|
+|   Valor Válido    |   CEev    |   +inf    |   CEev1   |    14     |
+|                   |           |   -inf    |   CEev2   |    -9     |
+|   Valor No válido |   CEei    |    0      |   CEei1   |    0      |
 
 
 3. Conjetura de errores
@@ -63,14 +73,11 @@ Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguie
 
 4. Generar casos de prueba
 
-|Caso de prueba |   Entrada |   Salida  |
-|---|---|---|
-|  CP1          |    7/7    |   1       |
-|  CP2          |    5/-7   |   0       |
-|  CP3          |    -8/4   |   -2      |
-|  CP4          |   -24/-3  |   8       |
-|  CP5          |    0/20   |   100     |
-|  CP6          |    10/0   |   Error (excepción)   |
+|Caso de prueba | E: a  | E: b  |   Salida  |
+|---|---|---|---|
+|  CP1          |  7    |   14  |   1       |
+|  CP2          |  7    |  -9   |   0       |
+|  CP3          |  7    |   0   |   Error (excepción)      |
 
 
 
