@@ -62,7 +62,6 @@ public class CalculadoraTest {
     @Test
     void dividir() {
 
-        // Se realizan 4 pruebas y si las cuatro son ok, sumar será ok.
         assertAll("dividir",
                 () -> assertEquals(0, Calculadora.dividir(7, 14), "cp1"),
                 () -> assertEquals(0, Calculadora.dividir(7, -9), "cp2"));
